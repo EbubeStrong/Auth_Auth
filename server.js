@@ -35,6 +35,10 @@ mongoose
   .then(() => console.log("MongoDB Connected"))
   .catch((err) => console.log(err));
 
+  app.get("/", (req, res) => {
+    res.send("Welcome to the Circle-22 Authentication API. Wishing you all the best with the Authentication Process. Just keep grinding and you will get there. ");
+  });
+
 app.use("/api/auth", router);
 
 app.listen(PORT, () => {
