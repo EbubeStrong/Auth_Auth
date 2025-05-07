@@ -11,15 +11,15 @@ const PORT = process.env.PORT || 3000;
 
 app.use(
   cors({
-    origin: "*"
-    // origin: 
-    //   [
-    //   "http://localhost:5000",
-    //   "http://localhost:3000",
-    //   "http://localhost:5173",
-    //   "https://jayzwillz-react-authentication-app.netlify.app",
-    //   "https://circle-22-auth.vercel.app",
-    // ]
+    // origin: "*"
+    origin: 
+      [
+      "http://localhost:5000",
+      "http://localhost:3000",
+      "http://localhost:5173",
+      "https://jayzwillz-react-authentication-app.netlify.app",
+      "https://circle-22-auth.vercel.app",
+    ]
       ,
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: [
